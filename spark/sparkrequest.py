@@ -3,7 +3,7 @@ import json
 import sys
 
 class SparkRequest(object):
-    __module__ = 'Spark'
+    __module__ = 'spark'
 
     def __init__(self, token):
         self._token = token

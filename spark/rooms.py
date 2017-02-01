@@ -1,7 +1,7 @@
 from .sparkrequest import SparkRequest
 
 class Rooms(object):
-    __module__ = 'Spark'
+    __module__ = 'spark'
 
     def __init__(self, token):
        self._token = token

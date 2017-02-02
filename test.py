@@ -33,6 +33,9 @@ print "Check if you can see the message"
 garbage = raw_input("Press Enter to Continue...")
 print "Now, watch through the power of magic as the message dissapears!"
 spark.messages.delete(msg_id)
+garbage = raw_input("Press Enter to Continue...")
+print "We will now delete that room we created..."
+spark.rooms.delete(room_id)
 
 
 

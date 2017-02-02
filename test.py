@@ -1,7 +1,7 @@
 import sys
 from spark import SparkApi
-spark = SparkApi('M2U4MzQ3ZTYtZTczOC00YWQ4LTg3MzUtY2U0ODBmMTA2YWY0Y2ZmN2JjODUtZTFi')
-TEST_USER = 'dchappell@charter.ca'
+spark = SparkApi('<Your API Key Here>')
+TEST_USER = '<your email here>'
 
 print "First, lets see if we can do anything..."
 me_user = spark.people.get_me()

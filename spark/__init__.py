@@ -4,6 +4,7 @@ from .memberships import Memberships
 from .messages import Messages
 from .teams import Teams
 from .teammembers import TeamMembers
+from .webhooks import Webhooks
 
 
 class SparkApi(object):
@@ -16,6 +17,7 @@ class SparkApi(object):
         self.messages = Messages(self._token)
         self.teams = Teams(self._token)
         self.teammembers = TeamMembers(self._token)
+        self.webhooks = Webhooks(self._token)
 
     def set_token(self, token):
         self._token = token

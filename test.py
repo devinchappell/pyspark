@@ -26,7 +26,14 @@ print "Our room was created with id '" + room_id + "'"
 print "let's try to add your test user to the room."
 spark.memberships.create(room_id,p_email=TEST_USER, mod=True)
 print "Your test user should now see the room"
-input("Press Enter to Continue...")
+garbage = raw_input("Press Enter to Continue...")
+print "Let's post a message to the room!"
+msg_id = spark.messages.create_in_room(room_id,"This is a message")
+print "Check if you can see the message"
+garbage = raw_input("Press Enter to Continue...")
+print "Now, watch through the power of magic as the message dissapears!"
+spark.messages.delete(msg_id)
+
 
 
 

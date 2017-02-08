@@ -10,7 +10,7 @@ setup(
     author="Devin Chappell",
     author_email='devin.chappell@live.ca',
     keywords='python',
-    install_requires=["requests"]
+    install_requires=["requests"],
     packages=find_packages(),
     include_pacjkage_data=True
 )
